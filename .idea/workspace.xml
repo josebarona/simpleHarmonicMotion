@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dfb895d-c547-4938-885f-6614b7472c84" name="Default Changelist" comment="falta dibujar las figuras :)">
+    <list default="true" id="1dfb895d-c547-4938-885f-6614b7472c84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lissajous curve/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lissajous curve/Sketch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Curve.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sketch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sketch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,14 +32,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1854" />
-          <entry key="txt" value="34" />
+          <entry key="java" value="1947" />
+          <entry key="txt" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1854" />
-          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="JAVA" value="1947" />
+          <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
     </session>
@@ -66,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sketch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+            <state relative-caret-position="374">
+              <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#355#356#0" expanded="true" />
@@ -152,7 +148,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544126080256" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544127922163" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/processing-3.4-linux64/processing-3.4/core/library/core.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -197,7 +193,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544117641361</updated>
-      <workItem from="1544117642931" duration="7675000" />
+      <workItem from="1544117642931" duration="8729000" />
     </task>
     <task id="LOCAL-00001" summary="//">
       <created>1544121327552</created>
@@ -220,11 +216,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544124590214</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="almost done">
+      <created>1544126113295</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544126113295</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7675000" />
+    <option name="totallyTimeSpent" value="8729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="-4" width="960" height="1084" extended-state="4" />
@@ -269,7 +272,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="//" />
     <MESSAGE value="falta dibujar las figuras :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="falta dibujar las figuras :)" />
+    <MESSAGE value="almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Drawing.java">
@@ -306,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sketch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+        <state relative-caret-position="374">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#355#356#0" expanded="true" />

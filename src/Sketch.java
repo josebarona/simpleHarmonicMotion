@@ -60,7 +60,7 @@ public class Sketch extends PApplet implements Drawing{
 
         }
 
-        angle += 0.0090 ;
+        angle -= 0.0090 ;
 
         for(int j=0 ; j<cols ; j++){
             float centerX = w/2  ;
@@ -81,6 +81,15 @@ public class Sketch extends PApplet implements Drawing{
                 curves[j][i].setY(centerY+y );
             }
 
+        }
+
+        if(angle<-TWO_PI){
+            for(int i=0 ; i<rows ; i++){
+                for(int j=0 ; j<cols ; j++){
+                    curves[j][i].reset(); ;
+                }
+                angle = 0 ;
+            }
         }
 
 
@@ -116,6 +125,8 @@ public class Sketch extends PApplet implements Drawing{
             path.add(current) ;
             current = new PVector() ;
         }
+
+        public void reset(){this.path.clear();}
 
         public void show(){
             int color = (int) random(0,255) ;

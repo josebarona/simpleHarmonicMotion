@@ -1,4 +1,5 @@
 import processing.core.PApplet ;
+import sun.awt.geom.Curve;
 
 public class Sketch extends PApplet implements Drawing{
 
@@ -7,7 +8,7 @@ public class Sketch extends PApplet implements Drawing{
     int cols ;
     float diameter = w-10 ;
     float radius = diameter/2 ;
-    int speed = 1 ;
+    Curve[][] curves ;
 
     public void settings(){
         size(800,800) ;
@@ -24,24 +25,24 @@ public class Sketch extends PApplet implements Drawing{
         stroke(255) ;
         noFill();
 
+        int j = 1 ;
         for(int i=0 ; i<cols ; i++){
             float centerX = (i*w) + w/2 + w ;
             float centerY = w/2 ;
             stroke(255) ;
             strokeWeight(1) ;
             ellipse(centerX,centerY,diameter,diameter) ;
-            float x = radius * cos( angle*(i+1) -PI/2 ) ;
-            float y = radius * sin(angle-PI/2 ) ;
+            float x = radius * cos( angle*(i+1) - HALF_PI ) ;
+            float y = radius * sin(angle*(i+1) - HALF_PI ) ;
             stroke(255) ;
             strokeWeight(8) ;
             point( centerX+x , centerY+y );
-            stroke(255,50) ;
+            stroke(255,25) ;
             strokeWeight(1) ;
             line(centerX+x, 0 ,centerX+x,height);
-            speed += 1 ;
         }
 
-        angle += 0.05 ;
+        angle += 0.0098 ;
 
         for(int i= 0 ; i<cols ; i++){
             float centerX = w/2  ;
@@ -49,12 +50,12 @@ public class Sketch extends PApplet implements Drawing{
             stroke(255) ;
             strokeWeight(1) ;
             ellipse(centerX, centerY, diameter, diameter) ;
-            float x = radius * cos(angle+PI/2) ;
-            float y = radius * sin(angle+PI/2) ;
+            float x = radius * cos(angle*(i+1) +PI/2) ;
+            float y = radius * sin(angle*(i+1) +PI/2) ;
             stroke(255) ;
             strokeWeight(8) ;
             point( centerX+x , centerY+y ) ;
-            stroke(255,50) ;
+            stroke(255,25) ;
             strokeWeight(1) ;
             line(0, centerY+y ,width,centerY+y);
         }

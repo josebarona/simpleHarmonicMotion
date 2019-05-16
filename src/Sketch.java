@@ -17,6 +17,7 @@ public class Sketch extends PApplet implements Drawing{
 
     public void settings(){
         size(800,800) ;
+        pixelDensity(displayDensity()) ;
     }
 
     public void setup(){
@@ -50,7 +51,7 @@ public class Sketch extends PApplet implements Drawing{
             stroke(255) ;
             strokeWeight(8) ;
             point( centerX+x , centerY+y );
-            stroke(255,25) ;
+            stroke(255,50) ;
             strokeWeight(1) ;
             line(centerX+x, 0 ,centerX+x,height);
 
@@ -73,7 +74,7 @@ public class Sketch extends PApplet implements Drawing{
             stroke(255) ;
             strokeWeight(8) ;
             point( centerX+x , centerY+y ) ;
-            stroke(255,25) ;
+            stroke(255,50) ;
             strokeWeight(1) ;
             line(0, centerY+y ,width,centerY+y) ;
 
@@ -129,9 +130,9 @@ public class Sketch extends PApplet implements Drawing{
         public void reset(){this.path.clear();}
 
         public void show(){
-            int color = (int) random(0,255) ;
-            stroke(color) ;
-            strokeWeight(1) ;
+            int col = color(random(255),random(255),random(255)) ;
+            stroke(col) ;
+            strokeWeight(2.5f) ;
             noFill() ;
             beginShape() ;
             for(PVector vector : path){
